@@ -1,0 +1,122 @@
+/*Shared Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #343434;
+  --btn-color: #343434;
+  --primary-color-opacity: #f4d3d9;
+  --gray-color: #dee3e4;
+  --section-color: #f8f9fa;
+  --padding-section: 80px;
+  --main-duration: 300ms;
+  --black-color: #161618;
+  --text-color: #999;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+body {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::selection {
+  background: #ffc107;
+  color: black;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span,
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 88%;
+  padding-inline: 10px;
+  margin-inline: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--gray-color);
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.section {
+  padding-block: var(--padding-section);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-main {
+  color: var(--primary-color);
+}
+
+.bg-main {
+  background-color: var(--primary-color);
+}
+a:focus {
+  outline: none;
+}
+.form-control{
+  background-color: #24353f !important;
+}
+input::placeholder{
+  color: white !important;
+  text-align: center;
+  font-weight: bold;
+}
+input{
+  margin-top: 20px;
+  color: white !important;
+}
